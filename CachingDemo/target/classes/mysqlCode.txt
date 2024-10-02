@@ -1,0 +1,28 @@
+-- Step 1: Create the database
+CREATE DATABASE IF NOT EXISTS springboot_cache_db;
+
+-- Step 2: Use the created database
+USE springboot_cache_db;
+
+-- Step 3: Create the 'users' table
+CREATE TABLE IF NOT EXISTS users (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+show tables;
+
+-- Step 1: Use the correct database
+USE springboot_cache_db;
+
+-- Step 2: Insert 5 records into the 'users' table
+INSERT INTO users (name, email) VALUES ('John Doe', 'john.doe@example.com');
+INSERT INTO users (name, email) VALUES ('Jane Smith', 'jane.smith@example.com');
+INSERT INTO users (name, email) VALUES ('Mike Johnson', 'mike.johnson@example.com');
+INSERT INTO users (name, email) VALUES ('Emily Davis', 'emily.davis@example.com');
+INSERT INTO users (name, email) VALUES ('Chris Brown', 'chris.brown@example.com');
+
+-- Step 3: Verify that the data is inserted correctly
+SELECT * FROM users;
