@@ -1,0 +1,2 @@
+create a git repo named "ConfigServerDemo" and add a file named "application.properties" and
+add a content "example.message=Hello from the Config Server!"
